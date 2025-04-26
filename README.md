@@ -17,18 +17,6 @@
 
 この拡張機能には特別な要件はありません。Visual Studio Code 1.60.0以降で動作します。
 
-## 拡張機能の設定
-
-現在、この拡張機能には設定オプションはありません。将来のバージョンで以下のような設定を追加する可能性があります：
-
-* `cursorStay.scrollLines`: 一度にスクロールする行数
-* `cursorStay.smoothScrolling`: スムーススクロールの有効/無効
-
-## 既知の問題
-
-- 非常に大きなファイルでスクロール時にパフォーマンスが低下する可能性があります
-- 折りたたまれたコードブロックの中をスクロールする際に予期しない動作が発生することがあります
-
 ## リリースノート
 
 ### 0.0.1
@@ -50,17 +38,4 @@ code --install-extension vscode-cursor-stay-0.0.1.vsix
 この拡張機能は、VS Codeの拡張機能ガイドラインに従って開発されています：
 
 * [拡張機能ガイドライン](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Markdownの操作
-
-このREADMEはVisual Studio Codeで編集できます。便利なエディタのキーボードショートカット：
-
-* エディタの分割（macOSでは`Cmd+\`、WindowsとLinuxでは`Ctrl+\`）
-* プレビューの切り替え（macOSでは`Shift+Cmd+V`、WindowsとLinuxでは`Shift+Ctrl+V`）
-* `Ctrl+Space`（Windows、Linux、macOS）を押すとMarkdownスニペットのリストが表示されます
-
-## 詳細情報
-
-* [Visual Studio CodeのMarkdownサポート](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown構文リファレンス](https://help.github.com/articles/markdown-basics/)
 
