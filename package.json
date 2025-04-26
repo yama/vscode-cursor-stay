@@ -1,0 +1,61 @@
+{
+  "name": "vscode-cursor-stay",
+  "displayName": ".",
+  "description": "Scroll the editor while keeping the cursor visually fixed on screen",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yama/vscode-cursor-stay.git"
+  },
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursorStay.scrollDown",
+        "title": "Scroll Down and Keep Cursor in Place"
+      },
+      {
+        "command": "cursorStay.scrollUp",
+        "title": "Scroll Up and Keep Cursor in Place"
+      }
+    ],
+    "keybindings": [
+      {
+        "key": "ctrl+down",
+        "command": "cursorStay.scrollDown",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+up",
+        "command": "cursorStay.scrollUp",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.99.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
